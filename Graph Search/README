@@ -1,3 +1,5 @@
+This project was created for CS315 (Algorithm Design and Analysis) by Charlotte Shores
+
 315AdjencyList.py : Represent Graph as an Adjacency List
 
 This part of the project involves simply reading in the vertex and edge data for the
