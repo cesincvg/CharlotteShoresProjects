@@ -1,0 +1,33 @@
+315AdjencyList.py : Represent Graph as an Adjacency List
+
+This part of the project involves simply reading in the vertex and edge data for the
+graph and representing it as an adjacency list
+
+When compiling, the only thing the user needs to do is hit run. It will first print out
+the information gathered from each txt file and will then print out an adjacency list. 
+
+
+315BFS.py : In this part of the project I was able to print out the shortest path from Arad to Sibiu, 
+from Arad to Craiova, and finally from Arad to Bucharest utilizing the breadth-first search. 
+
+When compiling the code, all the user needs to do is hit run. When looking at the output, 
+the shortest path from each location will be the last item on the list. For example, the 
+shortest path from Arad to Craiva would be Arad to Sibiu to RimniCuVilcea. The code 
+automatically presumes that the next destination after RimniCuVilcea would be Craiva.
+
+
+315Dijkstra.py : During this section of the project, I was able to find the shortest path
+from one city to another utilizing their weights in Dijkstra’s Algorithm. 
+
+When running this code, all the user needs to do is hit run. It will then print out the 
+shortest path from the starting to the ending location. When finding the best path 
+from Arad to Bucharest, I was able to find the weight of the best path was 418 and the
+cities in which the path went through. 
+
+This path was different from the breadth-first search implemented above.  While this
+search relied only on the weights given by the weight on the Romania Vertices text file,
+the other algorithm relied only on the least number of vertices. In the breadth-first search,
+the fastest route found only has two stops (Sibiu and Fagaras). Without knowing the weights
+of routes, it was easily presumed that the least number of stops would be the fastest path.
+However, when using Dijkstra’s algorithm, we found that going through RimnicuVilcea and 
+Pitesti would actually be faster than Fagarus because of the weight. 
