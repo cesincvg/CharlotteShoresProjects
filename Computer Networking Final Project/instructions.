@@ -1,0 +1,17 @@
+Hi! Welcome to our happy little client/server network :)
+Here are some instructions that will help you navigate the file transfer:
+
+- First, go into the Client 1 code (this is denoted by BrandtClient.py) and change the contents of the 
+  variable name "filename" according to the instructions in the file. Also change the IP address found in both Client 1 and CLient 2's 
+  code to that of whatever machine you are using to run the server code.
+    - This is where you are able to adjust which file Client 1 is asking for.
+- Start up the server. This can be found in the server.py file.
+- Next run the Client 1 code 
+    - On the client side, this should alert you of a successful connection with the server, 
+      let you know that the client is waiting, and that the reciept of the file has been initiated. 
+      The terminal should pause here if the server is not in possession of the file already.
+    - On the server side, it should also alert you of a connection, as well as the name of the file requested by the client
+        - if the server is in possession of the file, it will send it immediately to the client. If not, it will stall here.
+- If the terminals pause, this is the queue to run the Client 2 code (found in the file jdClient.py) which will send the
+  requested file over to the server, who will send it to the other client, who will write it into a file called recieved_file
+- Finally the server will delete the file it sent to Client 1 if it was not already in possession of it
